@@ -1,5 +1,9 @@
 # WebRTC
 
+> 预期想做一个前后台兼备的聊天室，不幸卡在了 Node.js 上，还是前期考虑不够周全
+
+
+
 ## 测试地址
 
 * https://hbzs.github.io/WebRTC/Web/
@@ -103,8 +107,13 @@
 
 * JavaScript Session Establishment Protocol
 
+## 系统学习
+
+* [LearningWebRTC/](./LearningWebRTC/)
+  * 书籍：[Learning WebRTC 中文版-图书 - 博文视点](http://www.broadview.com.cn/book/2610)
+
 ## 学习资料
 
-- [即时通信 - 天镶的博客](http://lingyu.wang/#/category/即时通信) （主要）
+- [即时通信 - 天镶的博客](http://lingyu.wang/#/category/即时通信) 
 - [iOS下音视频通信-基于WebRTC - 简书](http://www.jianshu.com/p/c49da1d93df4)
 - [WebRTC/WebRTC入门教程.md at master · ChenYilong/WebRTC](https://github.com/ChenYilong/WebRTC/blob/master/WebRTC%E5%85%A5%E9%97%A8%E6%95%99%E7%A8%8B/WebRTC%E5%85%A5%E9%97%A8%E6%95%99%E7%A8%8B.md)
