@@ -1,0 +1,17 @@
+{
+    "name": "learningwebrtc",
+    "version": "1.0.0",
+    "description": "## 基础知识",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "hbzs",
+    "license": "MIT",
+    "dependencies": {
+        "webrtc-adapter": "latest",
+        "css-loader": "^0.21.0",
+        "style-loader": "^0.13.0",
+        "webpack": "^1.12.2"
+    }
+}

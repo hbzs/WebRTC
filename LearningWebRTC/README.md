@@ -24,10 +24,49 @@
       * 数据传输：通过 RTCDataChannel API 暴露给 JavaScript 层
 * WebRTC 标准：W3C（https://www.w3.org/TR/webrtc/） 和 IETF
 * 浏览器支持情况：http://caniuse.com/#search=webrtc
-  * 主要支持的有：Chrome、Firefox、Opera、Edge（EdgeHTML V15）、Android（V5）
+  * 目前主要支持的有：Chrome、Firefox、Opera、Edge（EdgeHTML V15）、Android（V5）
 * 支持的应用：点对点的连接程序都可以轻松扩展到 WebRTC（文件共享、文本聊天、多人游戏、货币流通等）
   * 低延迟、高性能连接（使用底层协议来提供高速性能）
   * 支持安全连接
 
 ## 获取用户媒体
 
+### 访问媒体设备
+
+* 过去浏览器：安装程序，基于 Flash、基于插件
+* 通过 JavaScript 访问 MediaStream API
+  * stream 对象：用以表示音频或视频形式的实时媒体流
+  * 提供设备间切换的功能
+  * 提供充分的安全保障：获得用户的访问许可
+* `<video>` 元素包含 `autoplay` 属性，移除这个属性，不会自动播放
+* 音频反馈现象可以关闭音频
+
+
+### 限制视频捕捉
+
+* 视频捕捉更复杂的约束限制及相关解释：https://www.w3.org/TR/mediacapture-streams/#constrainable-properties
+* 流类型选择场景举例
+  * 为了良好用户体验，选取参与视频呼叫用户的最小分辨率请求
+  * 保持特定风格或品牌形象，设置特定的宽高
+  * 受限的网络连接中限制视频流的分辨率来节省电力或带宽
+
+
+### 多设备处理
+
+* 循环处理多设备 ： [MediaDevices.enumerateDevices() - Web APIs | MDN](https://developer.mozilla.org/en-US/docs/Web/API/MediaDevices/enumerateDevices)
+* 设备信息： [MediaDeviceInfo - Web APIs | MDN](https://developer.mozilla.org/en-US/docs/Web/API/MediaDeviceInfo)
+
+## 相关知识
+
+* `!!`：将对象转换为布尔值判断对象是否为空
+* `/* jshint -W117 */`：抑制代码规范警告
+* video 占满：`object-fit: fill;`
+* 添加事件类型（click、blur、drag…）：[Event reference | MDN](https://developer.mozilla.org/en-US/docs/Web/Events)
+* prefix 相关
+  * 检测 prefix 添加：[Autoprefixer CSS online – make your vendor prefixes is actual](https://autoprefixer.github.io/)
+  * prefix 库：[postcss/autoprefixer: Parse CSS and add vendor prefixes to rules by Can I Use](https://github.com/postcss/autoprefixer)
+
+## 其它信息
+
+* Chrome：Webkit；Firefox：Moz；微软：MS
+* a shim library：https://github.com/webrtc/adapter/
