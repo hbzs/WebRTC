@@ -13,7 +13,7 @@ var constraints = {
             { maxHeight: 480 }
         ]
     },
-    audio: true
+    audio: false
 };
 
 if (/Android|iOS|iPhone|iPad|webOS/i.test(navigator.userAgent)) {
@@ -26,7 +26,7 @@ if (/Android|iOS|iPhone|iPad|webOS/i.test(navigator.userAgent)) {
                 maxHeight: 768
             }
         },
-        audio: true
+        audio: false
     };
 }
 

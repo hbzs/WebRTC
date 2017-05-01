@@ -23,7 +23,7 @@
                 max: 1080
             }
         },
-        audio: true
+        audio: false
     }).then(function(localMediaStream) {
         var video = document.getElementById('video');
         video.src = window.URL.createObjectURL(localMediaStream);
